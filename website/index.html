@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            background: url('f11.jpeg') no-repeat center center/cover;
+            color: #ff0000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        nav {
+            background-color: #d71921;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+        .hero {
+            position: relative;
+            background: url('vv.gif') no-repeat center center/cover;
+            height: 500px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin: 0 20px;
+        }
+        .content {
+            flex: 1;
+            padding: 40px 20px;
+        }
+        .section-title {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d71921;
+            padding-bottom: 10px;
+            font-size: 40px;
+            color: #d71921;
+        }
+        .driver, .team, .race {
+            background-color: #fff;
+            padding: 60px;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .driver h3, .team h3, .race h3 {
+            margin-top: 0;
+            color: #d71921;
+            font-size: 30px;
+        }
+        footer {
+            background-color: #ffffff;
+            color: #ff0000;
+            text-align: center;
+            padding: 20px 0;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        F1 
+    </header>
+    <nav>
+        <a href="Drivers.html">Drivers</a>
+        <a href="teams.html">Teams</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="about us.html">About Us</a>
+    </nav>
+    <div class="hero">
+        <h1>"A racing car is an animal with a thousand adjustments. We need to understand them all." - Ayrton Senna</h1>
+    </div>
+    <div class="content">
+        <section id="home">
+            <h2 class="section-title">Welcome to the best F1 Website!</h2>
+            <p>Stay up to date with the latest news, drivers, teams, and race schedules in the world of Formula 1.</p>
+        </section>
+        <section id="drivers">
+            <h2 class="section-title">Drivers</h2>
+            <div class="driver" style="background-image: url('lewis.jpeg')">
+                <h3>Lewis Hamilton</h3>
+                <p>Team: Mercedes</p>
+                <p>Nationality: British</p>
+            </div>
+            <div class="driver" style="background-image: url('max.jpeg')">
+                <h3>Max Verstappen</h3>
+                <p>Team: Red Bull Racing</p>
+                <p>Nationality: Dutch</p>
+            </div>
+            <div class="driver" style="background-image: url('lecrlec.jpg')">
+                <h3>Charles Leclerc</h3>
+                <p>Team: Ferrari</p>
+                <p>Nationality: Monegasque</p>
+            </div>
+        </section>
+        <section id="teams">
+            <h2 class="section-title">Teams</h2>
+            <div class="team">
+                <h3>Mercedes</h3>
+                <p>Team Principal: Toto Wolff</p>
+            </div>
+            <div class="team">
+                <h3>Red Bull Racing</h3>
+                <p>Team Principal: Christian Horner</p>
+            </div>
+        </section>
+        <section id="schedule">
+            <h2 class="section-title">Race Schedule</h2>
+            <div class="race">
+                <h3>Australian Grand Prix</h3>
+                <p>Date: March 21, 2024</p>
+                <p>Location: Melbourne, Australia</p>
+            </div>
+            <div class="race">
+                <h3>Monaco Grand Prix</h3>
+                <p>Date: May 26, 2024</p>
+                <p>Location: Monte Carlo, Monaco</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 F1 Website</p>
+    </footer>
+</body>
+</html>

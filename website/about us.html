@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            background: url('about-bg.jpg') no-repeat center center/cover;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        header img {
+            height: 40px;
+        }
+        nav {
+            background-color: #d71921;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .hero {
+            position: relative;
+            background: url('vv.gif') no-repeat center center/cover;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin: 0 20px;
+        }
+        .content {
+            flex: 1;
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .section-title {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d71921;
+            padding-bottom: 10px;
+            font-size: 30px;
+            color: #d71921;
+        }
+        .about-section, .team-section, .contact-section {
+            margin-bottom: 40px;
+        }
+        .about-section p, .team-section p, .contact-section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .team-member {
+            margin-bottom: 20px;
+        }
+        .team-member h3 {
+            margin-top: 0;
+            color: #d71921;
+            font-size: 24px;
+        }
+        .team-member p {
+            margin: 5px 0;
+        }
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 4px;
+            color: #000000;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #d71921;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #ffffff;
+            color: #ff0000;
+            text-align: center;
+            padding: 20px 0;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>F1 About us</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Drivers.html">Drivers</a>
+        <a href="teams.html">Teams</a>
+        <a href="schedule.html">Schedule</a>
+    </nav>
+    <div class="hero">
+        <h1>About Us</h1>
+    </div>
+    <div class="content">
+        <section class="about-section">
+            <h2 class="section-title">Our Mission</h2>
+            <p>Welcome to the F1 Fan Website! Our mission is to provide Formula 1 enthusiasts with the latest news, comprehensive driver and team information, and up-to-date race schedules. We aim to be the go-to source for all things F1, bringing fans closer to the action and excitement of the sport.</p>
+        </section>
+        <section class="team-section">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="team-member">
+                <h3>Mohammad farid</h3>
+                <p>Founder & CEO</p>
+                <p>Mohammad has been a passionate F1 fan for over the past couple of years and founded this website to share his love for the sport with other enthusiasts around the world.</p>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+            <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out to us using the form below. We'd love to hear from you!</p>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 F1 Website</p>
+    </footer>
+</body>
+</html>
